@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mụn lưng có nguy hiểm hay không? Dấu hiệu cần lưu ý</title>
+    <meta name="description" content="Giải đáp mụn lưng có nguy hiểm hay không, dấu hiệu nên đi khám và cách hạn chế sẹo, thâm để bảo vệ sức khỏe da vùng lưng.">
+
+    <style>
+         :root {
+            --bg-body: #fdf7ff;
+            --bg-card: #ffffff;
+            --bg-accent: #f4e6ff;
+            --bg-accent-soft: #ffe9f0;
+            --text-main: #333333;
+            --text-soft: #6b6b7a;
+            --primary: #8b6fff;
+            --primary-soft: rgba(139, 111, 255, 0.08);
+            --border-soft: rgba(0, 0, 0, 0.04);
+            --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
+            --radius-lg: 18px;
+            --radius-md: 12px;
+            --radius-sm: 999px;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top left, #fff7ff 0, #fdf7ff 45%, #f6f9ff 100%);
+            color: var(--text-main);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .page-shell {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .page-background {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.6;
+            z-index: -1;
+        }
+        
+        .page-background::before,
+        .page-background::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+        }
+        
+        .page-background::before {
+            width: 320px;
+            height: 320px;
+            top: -60px;
+            left: -40px;
+            background: radial-gradient(circle, #ffe3f3 0, transparent 70%);
+        }
+        
+        .page-background::after {
+            width: 360px;
+            height: 360px;
+            bottom: -80px;
+            right: -40px;
+            background: radial-gradient(circle, #e5e3ff 0, transparent 70%);
+        }
+        
+        .container {
+            width: min(1060px, 100% - 32px);
+            margin: 0 auto;
+        }
+        
+        header.site-header {
+            padding: 24px 0 16px;
+        }
+        
+        .header-inner {
+            padding: 18px 20px;
+            border-radius: var(--radius-lg);
+            background: linear-gradient(135deg, rgba(244, 230, 255, 0.9), rgba(255, 235, 242, 0.85));
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border-soft);
+        }
+        
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 4px 12px;
+            border-radius: var(--radius-sm);
+            background: rgba(255, 255, 255, 0.6);
+            color: var(--text-soft);
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+        
+        .eyebrow-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff9fb8, #8b6fff);
+        }
+        
+        .article-title {
+            margin: 12px 0 10px;
+            font-size: clamp(26px, 4vw, 32px);
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+        }
+        
+        .article-subtitle {
+            margin: 0;
+            max-width: 640px;
+            color: var(--text-soft);
+            font-size: 15px;
+        }
+        
+        main {
+            flex: 1;
+            padding-bottom: 40px;
+        }
+        
+        .layout {
+            display: grid;
+            grid-template-columns: minmax(0, 2.2fr) minmax(220px, 1fr);
+            gap: 32px;
+            align-items: flex-start;
+        }
+        
+        article {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 24px 24px 26px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border-soft);
+        }
+        
+        article p {
+            margin: 0 0 14px;
+            line-height: 1.7;
+            font-size: 15px;
+            color: var(--text-main);
+        }
+        
+        article p strong {
+            font-weight: 600;
+        }
+        
+        article a {
+            color: var(--primary);
+            text-decoration: none;
+            position: relative;
+        }
+        
+        article a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 1px;
+            background: var(--primary);
+            transition: width 0.22s ease;
+        }
+        
+        article a:hover::after {
+            width: 100%;
+        }
+        
+        h1,
+        h2 {
+            color: #26263a;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin: 22px 0 10px;
+            letter-spacing: -0.01em;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin: 0 0 14px;
+        }
+        
+        li {
+            margin-bottom: 6px;
+            line-height: 1.6;
+        }
+        
+        section.section-block {
+            scroll-margin-top: 88px;
+        }
+        
+        aside.toc-wrapper {
+            position: relative;
+        }
+        
+        nav#table-of-contents {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: var(--radius-lg);
+            padding: 18px 18px 16px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border-soft);
+        }
+        
+        .toc-label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .toc-label-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .toc-dot {
+            width: 18px;
+            height: 18px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #ffb6c9, #c9c3ff);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+        
+        .toc-title {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #44425a;
+        }
+        
+        .toc-hint {
+            font-size: 11px;
+            color: var(--text-soft);
+        }
+        
+        .toc-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .toc-list li a {
+            display: block;
+            padding: 8px 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #3d3b52;
+            font-size: 14px;
+            line-height: 1.4;
+            background: rgba(248, 246, 255, 0.9);
+            transition: background-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease, color 0.22s ease;
+        }
+        
+        .toc-list li a:hover {
+            background: #f0e9ff;
+            transform: translateX(3px);
+            box-shadow: 0 6px 16px var(--primary-soft);
+            color: #30285a;
+        }
+        
+        .toc-list li a:active {
+            transform: translateX(1px) translateY(1px);
+            box-shadow: 0 2px 8px var(--primary-soft);
+        }
+        
+        .disclaimer-box {
+            margin-top: 22px;
+            padding: 14px 14px 13px;
+            border-radius: var(--radius-md);
+            background: linear-gradient(135deg, rgba(255, 236, 245, 0.9), rgba(239, 238, 255, 0.95));
+            border: 1px solid rgba(255, 176, 196, 0.35);
+            box-shadow: 0 8px 22px rgba(220, 170, 210, 0.25);
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+        
+        .disclaimer-icon {
+            font-size: 18px;
+            margin-top: 2px;
+        }
+        
+        .disclaimer-text {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #473a46;
+        }
+        
+        .disclaimer-text strong {
+            font-weight: 600;
+        }
+        
+        footer.site-footer {
+            padding: 10px 0 26px;
+        }
+        
+        .footer-note {
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-soft);
+        }
+        
+        @media (min-width: 900px) {
+            aside.toc-wrapper {
+                position: sticky;
+                top: 18px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header.site-header {
+                padding-top: 16px;
+            }
+            .header-inner {
+                padding: 16px 16px 14px;
+            }
+            .layout {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 16px;
+            }
+            nav#table-of-contents {
+                margin-bottom: 4px;
+                padding: 14px 14px 12px;
+            }
+            article {
+                padding: 18px 16px 20px;
+            }
+            h2 {
+                font-size: 18px;
+                margin-top: 18px;
+            }
+            section.section-block {
+                scroll-margin-top: 96px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .article-title {
+                font-size: 23px;
+            }
+            .toc-list li a {
+                font-size: 13px;
+            }
+            .disclaimer-box {
+                padding: 12px 11px 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-shell">
+        <div class="page-background" aria-hidden="true"></div>
+
+        <header class="site-header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        <span>Da liễu · Kiến thức tham khảo</span>
+                    </div>
+                    <h1 class="article-title">Mụn lưng có nguy hiểm hay không?</h1>
+                    <p class="article-subtitle">
+                        Tìm hiểu mức độ nguy hiểm của mụn lưng, những dấu hiệu cần lưu ý và thời điểm nên thăm khám chuyên khoa da liễu.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="layout">
+                    <article aria-label="Nội dung bài viết về mụn lưng">
+                        <section class="section-block" id="gioi-thieu-mun-lung">
+                            <p><strong>Mụn lưng</strong> là tình trạng viêm hoặc không viêm của đơn vị nang lông – tuyến bã xuất hiện ở vùng lưng. Đây là một biểu hiện tương đối phổ biến, đặc biệt ở người có da dầu hoặc trong giai đoạn thay đổi nội tiết.</p>
+
+                            <p>Phần lớn trường hợp có diễn tiến lành tính. Tuy nhiên, mức độ ảnh hưởng phụ thuộc số lượng tổn thương, mức độ viêm và cách chăm sóc da. Câu hỏi mụn lưng có nguy hiểm hay không cần được đánh giá dựa trên từng tình trạng cụ thể.</p>
+                        </section>
+
+                        <section class="section-block" id="mun-lung-co-nguy-hiem-den-suc-khoe-khong">
+                            <h2>Mụn lưng có gây nguy hiểm đến sức khỏe không?</h2>
+
+                            <p>Trong đa số trường hợp, <a href="https://phongkhamdalieulg.vn/mun-lung/">mụn lưng</a> không được xem là bệnh lý nguy hiểm. Tổn thương thường khu trú ở lớp nông của da và không ảnh hưởng đến cơ quan nội tạng.</p>
+
+                            <p>Tuy nhiên, nếu tổn thương viêm sâu, lan rộng hoặc tái phát nhiều lần, tình trạng có thể gây biến chứng tại chỗ như thâm sau viêm hoặc sẹo. Những ảnh hưởng này tuy không đe dọa tính mạng nhưng có thể tác động đến thẩm mỹ và
+                                tâm lý.</p>
+                        </section>
+
+                        <section class="section-block" id="truong-hop-can-luu-y">
+                            <h2>Những trường hợp mụn lưng cần lưu ý</h2>
+
+                            <p>Một số biểu hiện cho thấy tình trạng có thể đang tiến triển nặng hơn bình thường và cần được đánh giá lâm sàng.</p>
+
+                            <ul>
+                                <li>Tổn thương sưng đau nhiều, kích thước lớn.</li>
+                                <li>Mụn mủ tái phát liên tục cùng một vị trí.</li>
+                                <li>Xuất hiện nang viêm sâu hoặc áp xe nhỏ.</li>
+                                <li>Da lưng để lại sẹo lõm hoặc sẹo lồi sau viêm.</li>
+                                <li>Kèm theo dấu hiệu viêm lan tỏa vùng da xung quanh.</li>
+                            </ul>
+
+                            <p>Những biểu hiện này có thể ghi nhận ở mức độ trung bình đến nặng. Nếu không được theo dõi phù hợp, nguy cơ để lại sẹo vĩnh viễn có thể tăng lên tùy cơ địa.</p>
+                        </section>
+
+                        <section class="section-block" id="bien-chung-co-the-gap">
+                            <h2>Biến chứng có thể gặp</h2>
+
+                            <p>Mặc dù không phải tình trạng nguy hiểm toàn thân, mụn lưng vẫn có thể gây ra một số hệ quả tại chỗ nếu viêm kéo dài.</p>
+
+                            <ul>
+                                <li>Thâm sau viêm kéo dài nhiều tháng.</li>
+                                <li>Sẹo lõm do tổn thương cấu trúc da.</li>
+                                <li>Sẹo lồi ở người có cơ địa sẹo tăng sinh.</li>
+                                <li>Rối loạn sắc tố vùng lưng.</li>
+                            </ul>
+
+                            <p>Ở một số người, ảnh hưởng tâm lý do tự ti về thẩm mỹ cũng có thể xuất hiện, đặc biệt khi tổn thương lan rộng hoặc kéo dài dai dẳng.</p>
+                        </section>
+
+                        <section class="section-block" id="yeu-to-lam-nang-tien-trien">
+                            <h2>Yếu tố làm tăng nguy cơ tiến triển nặng</h2>
+
+                            <p>Mức độ nguy hiểm không chỉ phụ thuộc vào bản chất tổn thương mà còn liên quan đến thói quen sinh hoạt và chăm sóc da.</p>
+
+                            <ul>
+                                <li>Tự ý nặn mụn không đúng cách.</li>
+                                <li>Chà xát mạnh vùng da đang viêm.</li>
+                                <li>Mặc quần áo bó sát, bí mồ hôi thường xuyên.</li>
+                                <li>Không theo dõi khi mụn có dấu hiệu viêm sâu.</li>
+                                <li>Căng thẳng kéo dài ảnh hưởng đến nội tiết.</li>
+                            </ul>
+
+                            <p>Những yếu tố này có thể làm phản ứng viêm trầm trọng hơn và kéo dài thời gian hồi phục.</p>
+                        </section>
+
+                        <section class="section-block" id="khi-nao-nen-di-kham">
+                            <h2>Khi nào nên đi khám?</h2>
+
+                            <p>Người bệnh nên cân nhắc thăm khám chuyên khoa da liễu khi mụn lưng lan rộng, đau nhiều, xuất hiện tổn thương viêm sâu hoặc để lại sẹo. Trường hợp không cải thiện sau thời gian tự chăm sóc cũng cần được đánh giá lại.</p>
+
+                            <p>Việc thăm khám giúp xác định mức độ tổn thương, phân loại tình trạng và đưa ra hướng theo dõi phù hợp. Đánh giá lâm sàng là bước quan trọng để hạn chế nguy cơ biến chứng về sau.</p>
+
+                            <p>Nếu tình trạng mụn lưng kéo dài hoặc có dấu hiệu tiến triển nặng, người bệnh có thể cân nhắc thăm khám tại cơ sở chuyên khoa da liễu uy tín. Việc kiểm tra trực tiếp giúp xác định rõ mức độ viêm và nguy cơ để lại sẹo. Trong
+                                trường hợp thuận tiện về khu vực, có thể tham khảo
+                                <a href="https://phongkhamdalieulg.vn/">Phòng khám Da Liễu LG</a> để được đánh giá và tư vấn theo tình trạng cụ thể.</p>
+                        </section>
+
+                        <section class="section-block" aria-label="Lưu ý quan trọng cuối bài">
+                            <div class="disclaimer-box">
+                                <span class="disclaimer-icon" aria-hidden="true">⚠️</span>
+                                <p class="disclaimer-text">
+                                    <strong>Thông tin và sản phẩm gợi ý trong bài viết chỉ mang tính chất tham khảo,
+                                        vui lòng liên hệ với Bác sĩ, Dược sĩ hoặc chuyên viên y tế để được tư vấn
+                                        cụ thể.</strong>
+                                </p>
+                            </div>
+                        </section>
+                    </article>
+
+                    <aside class="toc-wrapper" aria-label="Mục lục bài viết">
+                        <nav id="table-of-contents">
+                            <div class="toc-label">
+                                <div class="toc-label-left">
+                                    <span class="toc-dot" aria-hidden="true"></span>
+                                    <span class="toc-title">Mục lục</span>
+                                </div>
+                                <span class="toc-hint">Nhấp để cuộn mượt</span>
+                            </div>
+                            <ul class="toc-list" id="toc-list">
+                                <!-- Mục lục sẽ được tạo tự động bằng JavaScript -->
+                            </ul>
+                        </nav>
+                    </aside>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p class="footer-note">
+                    Nội dung mang tính chất tham khảo, không thay thế cho đánh giá và tư vấn trực tiếp từ chuyên gia y tế.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        (function() {
+            const tocList = document.getElementById("toc-list");
+            if (!tocList) return;
+
+            const headings = document.querySelectorAll("article h2");
+            headings.forEach((heading, index) => {
+                if (!heading.id) {
+                    const baseId = heading.textContent
+                        .toLowerCase()
+                        .normalize("NFD")
+                        .replace(/[\u0300-\u036f]/g, "")
+                        .replace(/[^a-z0-9\s-]/g, "")
+                        .trim()
+                        .replace(/\s+/g, "-");
+                    const uniqueId = baseId || `phan-muc-${index + 1}`;
+                    heading.id = uniqueId;
+                }
+
+                const li = document.createElement("li");
+                const link = document.createElement("a");
+                link.href = `#${heading.id}`;
+                link.textContent = heading.textContent.trim();
+                li.appendChild(link);
+                tocList.appendChild(li);
+            });
+        })();
+    </script>
+</body>
+
+</html>
